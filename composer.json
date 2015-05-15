@@ -1,0 +1,30 @@
+{
+  "name": "Websays/websays-api-examples-php",
+  "description": "Complete front end example of a Websays' API integration.",
+  "keywords": ["websays", "frontend", "example", "php"],
+  "type": "example",
+  "homepage": "https://github.com/Websays/websays-api-examples-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Websays",
+      "homepage": "https://websays.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*",
+    "mockery/mockery": "dev-master",
+    "guzzlehttp/guzzle": "~5.2"
+  },
+  "suggest": {
+    "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client"
+  },
+  "autoload": {
+    "psr-4": {
+      "Websays\\": "src/Websays/"
+    }
+  }
+}
