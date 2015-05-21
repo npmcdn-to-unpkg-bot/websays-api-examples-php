@@ -15,11 +15,11 @@ You have to set the credentials in the file and execute like this:
 php src/getToken/getToken.php
 ```
 
-## [Example 1](src/example1/example1.php)
+## [Example 1](src/example1/example1.php): Get Data to Draw a Chart
 
 This example shows how you can access the ```/charts/evolution``` API resource and print charts using JavaScript.
 
-It generates a static HTML file and saves the file as ```public/example1/index.html```
+The data is accessed by a PHP process in the background which generates a static HTML file and saves the file as ```public/example1/index.html```
 
 You have to set the credentials in the file and execute like this:
 
