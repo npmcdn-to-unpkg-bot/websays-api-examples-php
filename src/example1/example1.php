@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('Europe/Madrid');
+
 /**
  * Websays Opinion Analytics Engine
  *
@@ -22,12 +24,17 @@ use \Websays\API;
 // Set credentials
 $threeScaleUserKey = '3SCALE_USER_KEY'; // 3scale user key
 $jwt = 'YOUR_TOKEN_HERE'; // JSON Web Token // JSON Web Token
+$jwt = 'YOUR_TOKEN_HERE'; // JSON Web Token
 
 $api = new API($threeScaleUserKey);
 
 $api->SetJWTCredentials($jwt);
 
-list ($status, $chartsData, $error) = $api->GetChartsEvolution(256, array('polarity', 'sources'), API::INTERVAL_LAST7DAYS);
+$sf = array(
+    'interval' => API::INTERVAL_LAST7DAYS
+);
+
+list ($status, $chartsData, $error) = $api->GetChartsEvolution(256, array('polarity', 'sources', 'share'), $sf);
 
 if ($error) {
     echo "Cannot get data from server\n";

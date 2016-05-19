@@ -84,11 +84,11 @@ class API {
         return array($httpStatusCode, json_decode($responseBody, true), false);
     }
 
-    public function GetChartsEvolution ($profileId, Array $charts = array(), $interval = self::INTERVAL_LAST24HOURS) {
+    public function GetChartsEvolution ($profileId, Array $charts = array(), Array $sf) {
         $queryStringParams = array(
             'profile_id' => $profileId,
             'charts' => implode(',', $charts),
-            'interval' => $interval
+            'sf' => json_encode($sf)
         );
 
         $ch = curl_init();
