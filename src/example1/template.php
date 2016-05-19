@@ -41,6 +41,12 @@
                 <figure id="chart-evolution-sources"></figure>
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Share of voice: last 7 days</h2>
+                <figure id="chart-evolution-share"></figure>
+            </div>
+        </div>
         <hr />
         <footer class="footer">
             <p>Last update: <strong><?php echo date('r'); ?></strong></p>
