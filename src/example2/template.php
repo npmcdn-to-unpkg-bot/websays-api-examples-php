@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Websays API integration - Example 2</title>
-    <meta name="description" content="Websays API integration - Example 1">
+    <meta name="description" content="Websays API integration - Example 2">
     <meta name="author" content="Websays, S.L.">
 
     <link rel="shortcut icon" href="../favicon.ico">

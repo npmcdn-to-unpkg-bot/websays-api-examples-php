@@ -166,7 +166,7 @@
     };
 
     DateChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     function PageSuperTypeChart () {
@@ -294,7 +294,7 @@
     };
 
     PageSuperTypeChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     function LangDetectedChart () {
@@ -497,7 +497,7 @@
     };
 
     LangDetectedChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     function PhrasesChart () {

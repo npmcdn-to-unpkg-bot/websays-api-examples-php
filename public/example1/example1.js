@@ -267,7 +267,7 @@
     };
 
     PolarityChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     function SourcesChart() {
@@ -455,7 +455,7 @@
     };
 
     SourcesChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     function ShareChart() {
@@ -639,7 +639,7 @@
     };
 
     ShareChart.prototype.createChart = function () {
-        this.chart = new Highcharts.Chart(this.config);
+        this.chart = new Highcharts.Chart(this.data);
     };
 
     polarityChart = new PolarityChart();

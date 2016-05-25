@@ -24,7 +24,6 @@ use \Websays\API;
 // Set credentials
 $threeScaleUserKey = '3SCALE_USER_KEY'; // 3scale user key
 $jwt = 'YOUR_TOKEN_HERE'; // JSON Web Token
-$jwt = 'YOUR_TOKEN_HERE'; // JSON Web Token
 
 $api = new API($threeScaleUserKey);
 
