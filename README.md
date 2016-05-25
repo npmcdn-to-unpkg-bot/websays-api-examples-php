@@ -46,3 +46,19 @@ You have to set the credentials in the file and execute like this:
 ```
 
 This way you have a highly available website which can serve high volume of requests efficiently. You can set a cronjob to execute periodically to refresh data.
+
+## [Example 3](src/example3/example3.php): Get corporate channels and print them
+
+This example shows how you can access the ```/charts/corporate-channels``` API resource and print information and charts using JavaScript.
+
+The data is accessed by a PHP process in the background which generates a static HTML file and saves the file as ```public/example3/index.html```
+
+You have to set the credentials in the file and execute like this:
+
+**You need a valid token to execute this example**
+
+```bash
+./execute.example3.sh
+```
+
+This way you have a highly available website which can serve high volume of requests efficiently. You can set a cronjob to execute periodically to refresh data.
