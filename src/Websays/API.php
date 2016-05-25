@@ -116,4 +116,37 @@ class API {
 
         return array($httpStatusCode, json_decode($responseBody, true), false);
     }
+
+    public function GetChartsFacet ($profileId, Array $facets = array(), Array $sf) {
+        $queryStringParams = array(
+            'profile_id' => $profileId,
+            'facets' => implode(',', $facets),
+            'sf' => json_encode($sf)
+        );
+
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, self::BASE_URL.'charts/facet?'.http_build_query($queryStringParams));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            'Accept: application/json',
+            'X-3scale-user-key: '.$this->threeScaleUserKey,
+            'Authorization: Bearer '.$this->jwt
+        ));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 15);
+
+        $responseBody = curl_exec($ch);
+
+        // Get the response information
+        $httpStatusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        curl_close ($ch);
+
+        if (2 !== intval($httpStatusCode / 100)) { // 2XX status code
+            return array($httpStatusCode, $responseBody, true);
+        }
+
+        return array($httpStatusCode, json_decode($responseBody, true), false);
+    }
 }

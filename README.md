@@ -30,3 +30,19 @@ You have to set the credentials in the file and execute like this:
 ```
 
 This way you have a highly available website which can serve high volume of requests efficiently. You can set a cronjob to execute periodically to refresh data.
+
+## [Example 2](src/example2/example2.php): Get facets and print them
+
+This example shows how you can access the ```/charts/facet``` API resource and print charts using JavaScript.
+
+The data is accessed by a PHP process in the background which generates a static HTML file and saves the file as ```public/example2/index.html```
+
+You have to set the credentials in the file and execute like this:
+
+**You need a valid token to execute this example**
+
+```bash
+./execute.example2.sh
+```
+
+This way you have a highly available website which can serve high volume of requests efficiently. You can set a cronjob to execute periodically to refresh data.

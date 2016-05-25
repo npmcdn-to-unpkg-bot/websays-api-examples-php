@@ -69,11 +69,11 @@
 
     hcColors = ['#4572A7', '#AA4643', '#89A54E', '#80699B', '#3D96AE', '#DB843D', '#92A8CD', '#A47D7C', '#B5CA92', '#993BA7', '#4EA73E', '#43A7A0', '#A7943D', '#A76A3B'];
 
-    function fixTimestampsOnData (data) {
+    function fixTimestampsOnData(data) {
         var listCategories = data.xAxis.categories,
             i;
 
-        function loopHandler (dataItem, index) {
+        function loopHandler(dataItem, index) {
             return [listCategories[index] * 1000, Number(dataItem)];
         }
 
@@ -82,7 +82,7 @@
         }
     }
 
-    function PolarityChart () {
+    function PolarityChart() {
         this.chart = undefined;
         this.defaultSeriesType = 'column';
 
@@ -137,8 +137,7 @@
                     marker: {
                         enabled: false
                     },
-                    dataLabels: {
-                    }
+                    dataLabels: {}
                 },
                 column: {
                     stacking: 'normal',
@@ -206,7 +205,8 @@
             this.data.series.push(data.series[i]);
 
             // Sum data
-            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {}
+            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {
+            }
 
             if (sum) {
                 pieData.push({
@@ -221,7 +221,8 @@
         for (i = 0, mid = 0; i < data.xAxis.categories.length; i++) {
             mid = 0;
 
-            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {}
+            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {
+            }
 
             splineData.push(mid / 2);
         }
@@ -269,7 +270,7 @@
         this.chart = new Highcharts.Chart(this.config);
     };
 
-    function SourcesChart () {
+    function SourcesChart() {
         this.chart = undefined;
         this.defaultSeriesType = 'column';
 
@@ -324,8 +325,7 @@
                     marker: {
                         enabled: false
                     },
-                    dataLabels: {
-                    }
+                    dataLabels: {}
                 },
                 column: {
                     stacking: 'normal',
@@ -393,7 +393,8 @@
             this.data.series.push(data.series[i]);
 
             // Sum data
-            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {}
+            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {
+            }
 
             if (sum) {
                 pieData.push({
@@ -408,7 +409,8 @@
         for (i = 0, mid = 0; i < data.xAxis.categories.length; i++) {
             mid = 0;
 
-            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {}
+            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {
+            }
 
             splineData.push(mid / 2);
         }
@@ -456,7 +458,7 @@
         this.chart = new Highcharts.Chart(this.config);
     };
 
-    function ShareChart () {
+    function ShareChart() {
         this.chart = undefined;
         this.defaultSeriesType = 'spline';
 
@@ -507,8 +509,7 @@
                     marker: {
                         enabled: false
                     },
-                    dataLabels: {
-                    }
+                    dataLabels: {}
                 },
                 column: {
                     stacking: 'normal',
@@ -576,7 +577,8 @@
             this.data.series.push(data.series[i]);
 
             // Sum data
-            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {}
+            for (ii = 0, sum = 0; ii < data.series[i].data.length; sum += data.series[i].data[ii++][1]) {
+            }
 
             if (sum) {
                 pieData.push({
@@ -591,7 +593,8 @@
         for (i = 0, mid = 0; i < data.xAxis.categories.length; i++) {
             mid = 0;
 
-            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {}
+            for (x = 0; x < data.series.length; mid += data.series[x++].data[i][1]) {
+            }
 
             splineData.push(mid / 2);
         }
