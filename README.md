@@ -3,7 +3,7 @@ Complete front end example of a Websays' API integration in PHP language.
 
 We have two code examples including a [class](src/Websays/API.php) to access to the API.
 
-**In order to access the API you need a [3scale](https://websays.3scale.net) user key and a Websays' user credentials.**
+**In order to access the API you need a [3scale](https://websays.3scale.net) user key and a Websays' user credentials. You can also read the [API documentation](https://websays.3scale.net/docs).**
 
 ## [Get token example](src/getToken/getToken.php)
 
