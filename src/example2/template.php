@@ -66,7 +66,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.1.5/highcharts.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//npmcdn.com/wordcloud@1.0.4"></script>
+    <script src="//unpkg.com/wordcloud@1.0.4"></script>
     <script src="wordcloud.js"></script>
     <script src="example2.js"></script>
 </body>
